@@ -4,10 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
  public class Play_button_bg : MonoBehaviour
+ {
+    public void play()
     {
-        public void play()
-        {
-            SceneManager.LoadScene("2_Start_home");
-        }
-
+        SceneManager.LoadScene("3.1_Level_Game_BG 1");
     }
+}
