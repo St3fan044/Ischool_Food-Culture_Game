@@ -4,27 +4,49 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
+
 {
-    public Slider _musicSlider, _sfxSlider;
+    public Sprite MusicOnSprite;
+    public Sprite MusicOffSprite;
+    public Sprite SFXOnSprite;
+    public Sprite SFXOffSprite;
+
+    public Image MusicButton;
+    public Image SFXButton;
+
+    private bool MusicOn = true;
+    private bool SFXOn = true;
+
+
 
     public void ToggleMusic()
     {
         AudioManager.Instance.ToggleMusic();
+        MusicOn = !MusicOn;
+        if (MusicOn)
+        {
+            MusicButton.sprite = MusicOnSprite;
+        }
+
+        else
+        {
+            MusicButton.sprite = MusicOffSprite;
+        }
+        
     }
 
     public void ToggleSFX()
     {
         AudioManager.Instance.ToggleSFX();
-    }
+        SFXOn = !SFXOn;
+        if (SFXOn)
+        {
+            SFXButton.sprite = SFXOnSprite;
+        }
 
-    public void MusicVolume()
-    {
-        AudioManager.Instance.MusicVolume(_musicSlider.value);
+        else
+        {
+            SFXButton.sprite = SFXOffSprite;
+        }
     }
-
-    public void SFXVolume()
-    {
-        AudioManager.Instance.SFXVolume(_sfxSlider.value);
-    }
-
 }
