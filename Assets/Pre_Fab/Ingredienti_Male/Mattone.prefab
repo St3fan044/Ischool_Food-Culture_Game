@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 816878476624735585}
   m_Layer: 0
   m_Name: Mattone
-  m_TagString: ingredienti
+  m_TagString: malus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
