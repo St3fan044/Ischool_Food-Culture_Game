@@ -30,6 +30,7 @@ public class Ingredients : MonoBehaviour
         ingridient_cek[ingridient_type.Cannella] = false;
         ingridient_cek[ingridient_type.Sale_Marino] = false;
         ingridient_cek[ingridient_type.Sale] = false;
+        ingridient_cek[ingridient_type.Aglio] = false;
     }
 
     private void OnTriggerEnter2D(UnityEngine.Collider2D other)
