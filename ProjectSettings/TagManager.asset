@@ -7,6 +7,7 @@ TagManager:
   - ingrtedienti
   - ingredienti
   - malus
+  - Animation
   layers:
   - Default
   - TransparentFX

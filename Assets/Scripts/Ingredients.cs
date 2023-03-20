@@ -51,7 +51,6 @@ public class Ingredients : MonoBehaviour
         if (other.gameObject.CompareTag("malus"))
         {
             Destroy(other.gameObject);
-            slider.UpdateSlider(-10);
         }
     }
     
