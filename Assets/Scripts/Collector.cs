@@ -6,7 +6,7 @@ public class Collector : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D target)
     {
-        if (target.tag == "ingredienti" || target.tag == "male")
+        if (target.tag == "ingredienti" || target.tag == "malus")
         {
             Destroy(target.gameObject); 
         }
