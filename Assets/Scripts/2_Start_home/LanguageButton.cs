@@ -27,6 +27,8 @@ public class LanguageButton : MonoBehaviour
         {
             otherLanguage.selected = false;
         }
+
+        FindObjectOfType<ButtonPlay>();
     }
 
     private void Update()
