@@ -18,7 +18,7 @@ public class Loading_Bar : MonoBehaviour
     {
         if(time == 5)
         {
-            //SceneManager.LoadScene();
+            //SceneManager.LoadScene("2_Start_home");
         }
     }
 

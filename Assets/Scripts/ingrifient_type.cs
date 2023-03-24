@@ -27,5 +27,10 @@ public enum ingridient_type
     Aglio,
     Prezzemolo,
     Sale_Marino,
-    Sale   
+    Sale,
+    Burro_Fuso,
+    Prosciutto,
+    Erbe_Cotte,
+    Brodo_Carne,
+    Salvia
 }
