@@ -320,6 +320,7 @@ GameObject:
   - component: {fileID: 258258681}
   - component: {fileID: 258258683}
   - component: {fileID: 258258684}
+  - component: {fileID: 258258685}
   m_Layer: 5
   m_Name: EN
   m_TagString: Untagged
@@ -443,6 +444,26 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!95 &258258685
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258258679}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 563d077942a7b492c93bab44495d620a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &263846433
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,6 +623,7 @@ GameObject:
   - component: {fileID: 400238585}
   - component: {fileID: 400238584}
   - component: {fileID: 400238583}
+  - component: {fileID: 400238587}
   m_Layer: 5
   m_Name: Play
   m_TagString: Untagged
@@ -737,6 +759,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 400238581}
   m_CullTransparentMesh: 1
+--- !u!95 &400238587
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400238581}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9cb8a96358589400a820f23e230c2cf5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &404766416
 GameObject:
   m_ObjectHideFlags: 0
@@ -1395,7 +1437,7 @@ Animator:
   m_GameObject: {fileID: 844709779}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7538dae4090724eaf96925b69e9d1fbd, type: 2}
+  m_Controller: {fileID: 9100000, guid: b3fb14fdf6ba7449ab5ba9d6f8f6ac8d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1681,7 +1723,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -369, y: 820}
+  m_AnchoredPosition: {x: -379, y: 820}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1913987827
