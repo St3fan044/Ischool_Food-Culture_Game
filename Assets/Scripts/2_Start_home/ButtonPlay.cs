@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum GameVersion
 {
@@ -25,6 +26,8 @@ public class ButtonPlay : MonoBehaviour
     public void EnableBG() => gameVersion = GameVersion.BERGAMO;
     public void EnableBS() => gameVersion = GameVersion.BRESCIA;
 
+    public int sceneID;
+
     public void Play()
     {
         if (gameLanguage== GameLanguage.ITALIANO)
@@ -34,6 +37,7 @@ public class ButtonPlay : MonoBehaviour
             {
                 //siamo nella versione di BG ITA
                 //Carica scena
+                SceneManager.LoadScene("1.5_Text_Ita_BG");
                 Debug.Log("Siamo nella versione BG ITA");
             }
 
@@ -41,6 +45,7 @@ public class ButtonPlay : MonoBehaviour
             {
                 //siamo nella versione di BS ITA
                 //Carica scena
+                SceneManager.LoadScene("1.5_Text_Ita_BS");
                 Debug.Log("Siamo nella versione BS ITA");
 
             }
@@ -54,6 +59,7 @@ public class ButtonPlay : MonoBehaviour
             {
                 //siamo nella versione di BG ENG
                 //Carica scena
+                SceneManager.LoadScene("1.5_Text_Eng_BG");
                 Debug.Log("Siamo nella versione BG ENG");
             }
 
@@ -61,6 +67,7 @@ public class ButtonPlay : MonoBehaviour
             {
                 //siamo nella versione di BS ENG
                 //Carica scena
+                SceneManager.LoadScene("1.5_Text_Eng_BS");
                 Debug.Log("Siamo nella versione BS ENG");
             }
         }
