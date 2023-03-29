@@ -237,11 +237,21 @@ MonoBehaviour:
   textComponent: {fileID: 1375932671}
   lines:
   - 
-  - Ciao
-  - Come ti chiami?
-  - Io giovanna
-  - ahahahahahahahahahahahahahahaha
-  textSpeed: 0.1
+  - "Hello and welcome! i\u2019m Professor Irina Cigolini."
+  - Before starting, here are a couple of curiosities about Bergamo!
+  - You must know that Bergamo rises on Seven Hills. The Venetian Walls of the Upper
+    Town were built between 1561 and 1588 and in July 2017 thay were recognized as
+    a Unesco World Heritage Site.
+  - Speaking of Casoncelli we can say that it is a typical Lombard pasta, rooted
+    in tradition, so much so that many families have their own personal recipe. Its
+    anniversary falls on May 13, thanks to a document that confirms his birth.
+  - The ingredients that mainly identify the Casoncello Bergamasco are, for example,
+    the Amaretti, a hard and dry biscuit produced with apricot Kernels, or the Pear,
+    always in season.
+  - 'To recreate it, however, we need your help: collect the correct ingredients
+    and avoid the harmful ones instead.'
+  - 
+  textSpeed: 0.09
 --- !u!1 &1189073942
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,8 +417,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d46fa1fa5b37349e4b8d008cf371ffb8, type: 2}
+  m_sharedMaterial: {fileID: -6809018841684092981, guid: d46fa1fa5b37349e4b8d008cf371ffb8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -432,15 +442,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -468,7 +478,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -0.64546216, y: 1.6202698, z: -0.00003063707, w: -9.457581}
+  m_margin: {x: 8.483994, y: 10.749847, z: 9.129577, w: 4.2367554}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

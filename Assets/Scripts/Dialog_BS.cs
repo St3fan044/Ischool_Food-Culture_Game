@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Dialog : MonoBehaviour
+public class Dialog_BS : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
     public string[] lines;
@@ -22,7 +22,7 @@ public class Dialog : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if(textComponent.text == lines[index])
+            if (textComponent.text == lines[index])
             {
                 NextLine();
             }
@@ -42,16 +42,16 @@ public class Dialog : MonoBehaviour
 
     IEnumerator TypeLine()
     {
-        foreach(char c in lines[index].ToCharArray())
+        foreach (char c in lines[index].ToCharArray())
         {
             textComponent.text += c;
             yield return new WaitForSeconds(textSpeed);
-        }     
+        }
     }
 
     void NextLine()
     {
-        if(index < lines.Length - 1)
+        if (index < lines.Length - 1)
         {
             index++;
             textComponent.text = string.Empty;
@@ -59,7 +59,7 @@ public class Dialog : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene("3.1_Level_Game_BG");
+            SceneManager.LoadScene("3.1_Level_Game_BS");
         }
     }
 }
