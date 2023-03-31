@@ -10,6 +10,13 @@ public class Volume : MonoBehaviour
     public Button button;
     private bool isOn = true;
 
+
+    public AudioClip AudioClipClickButton;
+    public AudioClip AudioBarraCompletamento;
+    public AudioClip AudioBusta;
+
+
+
     public AudioSource audioSource;
 
     private void Start()
@@ -36,4 +43,9 @@ public class Volume : MonoBehaviour
             audioSource.mute = false;
         }
     }
+
+
+    
+
+
 }
