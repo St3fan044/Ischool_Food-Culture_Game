@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3061483256845802632}
   - component: {fileID: 816878476624735585}
   - component: {fileID: -8577800641085200101}
+  - component: {fileID: 6048827046353500665}
   m_Layer: 0
   m_Name: Acqua
   m_TagString: ingredienti
@@ -147,3 +148,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 3
+--- !u!114 &6048827046353500665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2906206896990856129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f59386e874ff4607b3cc3235290ce42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  i_sound: {fileID: 0}
