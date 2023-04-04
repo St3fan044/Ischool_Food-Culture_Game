@@ -18,12 +18,12 @@ public class AudioManager : MonoBehaviour
     {
         if (AudioOn)
         {
-            FindObjectOfType<AudioSource>().mute = false;
+            GetComponent<AudioSource>().mute = false;
         }
 
         else
         {
-            FindObjectOfType<AudioSource>().mute = true;
+            GetComponent<AudioSource>().mute = true;
         }
     }
 
