@@ -30,11 +30,14 @@ public class Volume : MonoBehaviour
     }
     public void ButtonClicked()
     {
+        audioSource.GetComponent<AudioManager>().toggleaudio();
+        
         if (isOn)
         {
             button.image.sprite = soundOffImage;
             isOn = false;
            audioSource.mute = true;
+            
         }
         else
         {
