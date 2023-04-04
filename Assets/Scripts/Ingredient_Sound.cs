@@ -10,7 +10,7 @@ public class Ingredient_Sound : MonoBehaviour
     {
         if (target.gameObject.tag == "Player")
         {
-            i_sound.Play();
+            //i_sound.Play();
         }
     }
 }

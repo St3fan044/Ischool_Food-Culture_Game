@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Ingredients : MonoBehaviour
 {
+    public AudioClip malus_sound;
 
     public SliderController slider;
 
@@ -56,6 +57,7 @@ public class Ingredients : MonoBehaviour
         if (other.gameObject.CompareTag("malus"))
         {
             Destroy(other.gameObject);
+            FindObjectOfType<AudioSource>().PlayOneShot(malus_sound);
         }
     }
     

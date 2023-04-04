@@ -9,4 +9,9 @@ public class Chage_scene : MonoBehaviour
     {
         SceneManager.LoadScene("5_Reward");
     }
+
+    private void Awake()
+    {
+        Invoke("go_to_reward_scene", 2f);
+    }
 }
