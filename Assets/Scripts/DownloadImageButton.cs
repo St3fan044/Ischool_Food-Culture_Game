@@ -7,10 +7,10 @@ public class DownloadImageButton : MonoBehaviour
 {
 
     [DllImport("__Internal")]
-    private static extern void ImageDownloader(string str, string fn);
+    private static extern void ImageDownloader(byte[] array, int byteLength, string fileName);
  
     public static byte[] ssData = null;
-    public static string imageFilename = "certificate";
+    public static string imageFilename = "certificate.png";
     public void DownloadScreenshot(Texture2D image)
     {
         ssData = image.EncodeToPNG();
@@ -18,7 +18,8 @@ public class DownloadImageButton : MonoBehaviour
         if(ssData != null)
         {
             Debug.Log("Downloading..." + imageFilename);
-            ImageDownloader(System.Convert.ToBase64String(ssData), imageFilename);
+            //ImageDownloader(System.Convert.ToBase64String(ssData), imageFilename);
+            ImageDownloader(ssData, ssData.Length, "certificate.png");
         }
     }
 
